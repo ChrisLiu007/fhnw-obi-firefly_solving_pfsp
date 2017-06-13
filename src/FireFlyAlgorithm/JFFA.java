@@ -1,5 +1,7 @@
 package FireFlyAlgorithm;
 
+import FlowShopProblem.ProblemDefinitionArray;
+
 /**
  *
  * @author erigha eseoghene dan
@@ -17,8 +19,7 @@ public class JFFA {
 		double alpha = 0.25; // JS: default 0.25
 		double betamin = 0.2; // JS: default 0.2 //β0 is the attractiveness at r
 		double gamma = 1.0; // JS: default 1.0
-		int dimension = 6; // JS: default 2 // Equals number of n jobs
-
+		int dimension = ProblemDefinitionArray.arrJobsTimes.length; // JS: default 2 // Equals number of n jobs
 		ffa = new FFA(n, maxGen, alpha, betamin, gamma, dimension, verbose);
 	}
 

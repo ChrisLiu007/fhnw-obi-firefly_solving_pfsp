@@ -20,8 +20,6 @@ public class FireFlyFitnessFunction {
 
 	public double getFitness(Object o, int[] ranks, FireFly[] aFireFlies, int verbose) {
 		FireFly aFireFly = (FireFly) o;
-		double x = formatNumber(aFireFly.getValue(0));
-		double y = formatNumber(aFireFly.getValue(1));
 
 		// JS: Define Problem in ProblemDefinitionArray Class
 		int arrJobsTimes [][] = ProblemDefinitionArray.arrJobsTimes;
